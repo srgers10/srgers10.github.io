@@ -10,7 +10,7 @@
         top:16px;
         left:16px;
         float: left;
-        padding: 32;
+
 
       }
       .projects{
@@ -26,6 +26,8 @@
       .project{
 
         margin-top: 4px;
+        width: 200px;
+
 
       }
 
@@ -61,7 +63,7 @@
         font-size: 18px;
       }
 
-      button:hover, .project:hover {
+      button:hover, .hover:hover {
         opacity: 0.7;
       }
       html, body {
@@ -113,17 +115,17 @@
 
   <body>
     <div class="navBar">
-      Stephen Rogers
-      <%= link_to home_path do %><button>Home</button><%end%>
+      Portfolio: Stephen Rogers
     </div>
 
     <div class="base info">
-      <%= image_tag "https://media.licdn.com/dms/image/C5603AQGydHUxkN1wwA/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=A4hR64CtEaat7HkJlGC9-xUwgS-o23cD2Mggss6yYqs", style: 'margin-top: 16px; height:100%; width:80%' %>
+      <img src = "https://media.licdn.com/dms/image/C5603AQGydHUxkN1wwA/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=A4hR64CtEaat7HkJlGC9-xUwgS-o23cD2Mggss6yYqs" style = 'margin-top: 16px; height:40%; width:80%' />
+
 
       <div>
-        <h2 class="title">Student</h2>
+        <h2 class="title">Software Developer</h2>
 
-              <p> Senior @ University of Memphis</p>
+              <p> Code-Crew</p>
 
         <h3 class="title">Development Skills</h3>
 
@@ -167,7 +169,7 @@
 
         <p>Personal Email: stephen.rogers6@gmail.com</p>
         <p>School Email: srgers10@memphis.edu</p>
-        <p>Phone: 901-123-4567</p>
+        <p>Phone: 901-383-3007</p>
       </div>
 
 
@@ -177,10 +179,11 @@
     <div class = "projects" style = "grid-template-columns: 60% 40%;">
 
 
-      <div class = "base project" >
-        <%= link_to "https://www.partylinevr.com" do %>
-            <%= image_tag "https://static.wixstatic.com/media/0b0467_35de4013954645dd9e34afcc64538afc~mv2.png/v1/fill/w_339,h_56,al_c,q_80,usm_0.66_1.00_0.01/0b0467_35de4013954645dd9e34afcc64538afc~mv2.webp", style: 'height:10%; width:80%', :class => "project" %>
-        <%end%>
+      <div class = "base" >
+
+          <img src = "https://static.wixstatic.com/media/0b0467_35de4013954645dd9e34afcc64538afc~mv2.png/v1/fill/w_339,h_56,al_c,q_80,usm_0.66_1.00_0.01/0b0467_35de4013954645dd9e34afcc64538afc~mv2.webp" />
+
+
 
         <h5 style = "margin-top: 0px">September 2017 - Present</h5>
 
@@ -228,10 +231,9 @@
       </div>
 
 
-      <div class = "base project" >
-        <%= link_to "https://www.partylinevr.com" do %>
-            <%= image_tag "https://image.ibb.co/kSzF7z/HutShop.png", style: 'height:10%; width:80%', :class => "project" %>
-        <%end%>
+      <div class = "base" >
+
+            <img src = "https://image.ibb.co/kSzF7z/HutShop.png">
 
         <h5 style = "margin-top: 0px">June 2015 - June 2018</h5>
             <h3 style = "margin-bottom: 0px">Administrative Assistant </h3>
@@ -263,40 +265,47 @@
     <h1 class="base" style=" margin-left: 47%; margin-right: 30%">Personal Projects</h1>
     <div class = "projects">
 
+      <a href="https://partylinevr.com">
+      <div class = "base hover" >
 
-      <div class = "base project" >
-        <%= link_to "https://www.partylinevr.com" do %>
             <h2>Party Line VR</h2>
-            <%= image_tag "https://img1.wsimg.com/isteam/ip/66526596-3bc8-4f41-b1d3-36575e221f39/2c0d10e6-76f7-425f-a285-81e9bf1e7670.png/:/rs=w:600,h:750,cg:true,m/cr=w:1200,h:750,a:cc", style: 'height:40%; width:80%', :class => "project" %>
-        <%end%>
+            <img src = "https://img1.wsimg.com/isteam/ip/66526596-3bc8-4f41-b1d3-36575e221f39/2c0d10e6-76f7-425f-a285-81e9bf1e7670.png/:/rs=w:600,h:750,cg:true,m/cr=w:1200,h:750,a:cc" class = "project" />
+
         <p>Party Line VR is an assymetric vr party game in which you battle your friends using  up to 8 smart-devices</p>
 
       </div>
+    </a>
 
-      <div class = "base project" >
+      <div class = "base" >
         <h2>Stick Together</h2>
-         <%= image_tag "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif", style: 'height:40%; width:80%', :class => "project" %>
+          <img src = "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" class = "project" />
+
         <p>Stick Together! Play as a family man who's been seperated from his family. Move surrounding bumper-stickers to get to the ones you love most.</p>
       </div>
-      <div class = "base project" >
+      <div class = "base" >
         <h2>Planet Pool</h2>
-        <%= image_tag "https://images.immediate.co.uk/volatile/sites/3/2017/11/imagenotavailable1-39de324.png?quality=90&resize=620,413", style: 'height:40%; width:80%', :class => "project" %>
+          <img src = "https://images.immediate.co.uk/volatile/sites/3/2017/11/imagenotavailable1-39de324.png?quality=90&resize=620,413" class = "project" />
+
         <p>Planet Pool is a reimagining of the game of billiards. There is no tables, no gravity, and no limits to the fun you will have</p>
       </div>
-      <div class = "base project">
-        <%= link_to "https://srgers10.itch.io/personal-bubble" do %>
+      <a href="https://itch.io">
+      <div class = "base hover">
+
             <h2>Personal Bubble</h2>
-            <%= image_tag "https://img.itch.zone/aW1nLzE0MTU2MDAuZ2lm/original/KP8luQ.gif", style: 'height:40%; width:80%', :class => "project" %>
-        <%end%>
-        <p>Submitted as a Ludum Dare game jam entry, Personal Bubble is an attempt at making a 3D version of the popular web game Agar.io</p>
+              <img src = "https://img.itch.zone/aW1nLzE0MTU2MDAuZ2lm/original/KP8luQ.gif" class = "project" />
+
+        <p>Submitted as an entry or Ludum Dare 42, Personal Bubble is an attempt at making a 3D version of the popular web game Agar.io</p>
       </div>
-      <div class = "base project">
-        <%= link_to "https://srgers10.itch.io/magnet-head" do %>
+      </a>
+      <a href="https://itch.io">
+      <div class = "base hover">
+
             <h2>Magnet Head</h2>
-            <%= image_tag "https://img.itch.zone/aW1hZ2UvMzAwNzU2LzE0NzE1MDcuZ2lm/250x600/aEpTZC.gif", style: 'height:40%; width:80%', :class => "project" %>
-        <%end%>
+              <img src = "https://img.itch.zone/aW1hZ2UvMzAwNzU2LzE0NzE1MDcuZ2lm/250x600/aEpTZC.gif" class = "project" />
+
         <p>Magnet Head! A Zombie-Shooter without the control of aiming. Your head will be attracted to the closest metal object in the room and shoot in that direction. A submision for the GMTK 2018 Game Jam</p>
       </div>
+      <a>
     </div>
   </body>
 
