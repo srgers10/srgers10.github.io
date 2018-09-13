@@ -1,48 +1,57 @@
 <html>
   <head>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <title>Profile: Stephen Rogers</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <style>
-      .info{
-        position: relative;
-        width: 25%;
-        height:auto;
-        top:16px;
-        left:16px;
-        float: left;
-
-
-      }
-      .projects{
-        display: grid;
-        grid-gap: 16px;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 30% 30% 30%;
-        width: 60%;
-        margin-left: 30%;
-        padding:8px;
-      }
-
-      .project{
-
-        margin-top: 4px;
-        width: 200px;
-
-
-      }
-
+      .col-1{width: 16.66%;}
+      .col-2{width: 33.33%;}
+      .col-3{width: 49.98%;}
+      .col-4{width: 66.64%;}
+      .col-5{width: 83.33%;}
+      .col-6{width: 100%;}
       .base{
+        text-align: center;
         border-width: thick;
 
         border-style: solid;
         background-color: white;
         border-color: #8ad5d8;
-        text-align: center;
-        margin: 8px;
         box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+      }
+      [class*="col-"]{
+        float: left;
+        margin: 16px;
+
+      }
+
+      @media only screen and (max-width: 768px) {
+        [class*="col-"]{
+          width: 90%;
+        }
+      }
+
+      .projects{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding:8px;
+      }
+
+      .project{
+        margin: 4px;
       }
 
 
+      .titleWhite{
+        text-align: center;
+        border-width: thick;
+        border-style: solid;
+        background-color: white;
+        border-color: #8ad5d8;
+        box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+        max-height: 60px;
+        float: center;
+      }
 
       .title {
         color: white;
@@ -90,8 +99,8 @@
         color: white;
         text-align: center;
         font-size: 50px;
-        padding: 0;
-        padding-bottom: 64;
+
+        padding: 32;
         height:160px;
         margin-bottom: 64;
         background-color: #144149;
@@ -100,14 +109,6 @@
       .noMargin{
         margin-bottom: 0px;
         margin-top: 0px;
-      }
-
-      .inline-block-child {
-        display: inline-block;
-        float: left;
-        width: 40%;
-        margin-left: 16px;
-        margin-right: 16px;
       }
     </style>
 
@@ -118,41 +119,37 @@
       Portfolio: Stephen Rogers
     </div>
 
-    <div class="base info">
-      <img src = "https://media.licdn.com/dms/image/C5603AQGydHUxkN1wwA/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=A4hR64CtEaat7HkJlGC9-xUwgS-o23cD2Mggss6yYqs" style = 'margin-top: 16px; height:40%; width:80%' />
-
-
+    <div class="base col-2">
+      <img style = 'margin-top: 16px; width:60%' src = "https://media.licdn.com/dms/image/C5603AQGydHUxkN1wwA/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=A4hR64CtEaat7HkJlGC9-xUwgS-o23cD2Mggss6yYqs"  />
       <div>
         <h2 class="title">Software Developer</h2>
-
               <p> Code-Crew</p>
-
         <h3 class="title">Development Skills</h3>
 
-              <div style = "text-align: left; padding-left: 16px;">
-                  <h4>Programming Languages</h4>
-                  <ul>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Ruby/ Rails</li>
-                  </ul>
-                  <h4>Databases</h4>
-                  <ul>
-                    <li>SQL</li>
-                    <li>MongoDB</li>
-                    <li>Neo4j</li>
-                    <li>Google Firebase</li>
-                  </ul>
-                  <h4>Misc</h4>
-                  <ul>
-                    <li>HTML/CSS</li>
-                    <li>XML</li>
-                    <li>Android Studio</li>
-                    <li>Unity Engine</li>
-                  </ul>
-                  </div>
+        <div style = "text-align: left; padding-left: 16px;">
+            <h4>Programming Languages</h4>
+            <ul>
+              <li>C#</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Ruby/ Rails</li>
+            </ul>
+            <h4>Databases</h4>
+            <ul>
+              <li>SQL</li>
+              <li>MongoDB</li>
+              <li>Neo4j</li>
+              <li>Google Firebase</li>
+            </ul>
+            <h4>Misc</h4>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>XML</li>
+              <li>Android Studio</li>
+              <li>Unity Engine</li>
+            </ul>
+            </div>
         <h3 class= "title">Education</h3>
         <ul>
                     <li><h4>First Assembly Christian School - Cordova, TN</h4>
@@ -175,63 +172,60 @@
 
     </div>
 
-    <h1 class="base" style="margin-top: 32px; margin-left: 47%; margin-right: 30%">Work Experience</h1>
-    <div class = "projects" style = "grid-template-columns: 60% 40%;">
+    <h1 class="titleWhite col-3" >Work Experience</h1>
 
+    <div class = "base col-2" >
 
-      <div class = "base" >
-
-          <img src = "https://static.wixstatic.com/media/0b0467_35de4013954645dd9e34afcc64538afc~mv2.png/v1/fill/w_339,h_56,al_c,q_80,usm_0.66_1.00_0.01/0b0467_35de4013954645dd9e34afcc64538afc~mv2.webp" />
+        <img src = "https://static.wixstatic.com/media/0b0467_35de4013954645dd9e34afcc64538afc~mv2.png/v1/fill/w_339,h_56,al_c,q_80,usm_0.66_1.00_0.01/0b0467_35de4013954645dd9e34afcc64538afc~mv2.webp" />
 
 
 
-        <h5 style = "margin-top: 0px">September 2017 - Present</h5>
+      <h5 style = "margin-top: 0px">September 2017 - Present</h5>
 
-            <div class = "inline-block-child">
+          <div class = "inline-block-child">
 
-              <h3 style = "margin-bottom: 0px">Android Studio Instructor</h3>
-              <h5 class = "noMargin" >LITE Memphis</h5>
-              <h6 class = "noMargin" >June 2018 - August 2018</h6>
-              <ul>
-                <li>Instructed 3 college students how to build native Android apps from the ground up</li>
-                <li>Prepared them with the skills to write XML and Java code</li>
-                <li>Helped and managed GitHub accounts</li>
-                <li>Led the students in the creation of portfolio pages for their work</li>
-              </ul>
+            <h3 style = "margin-bottom: 0px">Android Studio Instructor</h3>
+            <h5 class = "noMargin" >LITE Memphis</h5>
+            <h6 class = "noMargin" >June 2018 - August 2018</h6>
+            <ul>
+              <li>Instructed 3 college students how to build native Android apps from the ground up</li>
+              <li>Prepared them with the skills to write XML and Java code</li>
+              <li>Helped and managed GitHub accounts</li>
+              <li>Led the students in the creation of portfolio pages for their work</li>
+            </ul>
 
-              <h3 style = "margin-bottom: 0px">Video Game Design Instructor</h3>
-              <h5 class = "noMargin" >Benjamin L. Hooks Central Library </h5>
-              <h6 class = "noMargin" >September 2017 - Present</h6>
-              <ul>
-                <li>Instructed 13-18yr olds on the process of making video games using the Unity Game Engine.</li>
-              </ul>
-
-
-            </div>
-
-            <div class = "inline-block-child">
-
-              <h3 style = "margin-bottom: 0px">Web Development Teaching Assistant</h3>
-              <h5 class = "noMargin" >Memphis Academy of Science & Engineering</h5>
-              <h6 class = "noMargin" >September 2017 - May 2018</h6>
-              <ul>
-                <li>Assisted in the teaching of basic web design concepts</li>
-                <li>Helped students hands on writing HTML/CSS/JavaScript. </li>
-              </ul>
-
-              <h3 style = "margin-bottom: 0px">Coach for Hackathon 2018</h3>
-              <h5 class = "noMargin" >Fed-Ex Institue of Technology</h5>
-              <h6 class = "noMargin" >July 2018</h6>
-              <ul>
-                <li>Led a team of five students and assisted them in the completion of their app.</li>
-                <li>Tought the team the basics behind app design and how to use AppInventor.</li>
-              </ul>
-
-            </div>
-      </div>
+            <h3 style = "margin-bottom: 0px">Video Game Design Instructor</h3>
+            <h5 class = "noMargin" >Benjamin L. Hooks Central Library </h5>
+            <h6 class = "noMargin" >September 2017 - Present</h6>
+            <ul>
+              <li>Instructed 13-18yr olds on the process of making video games using the Unity Game Engine.</li>
+            </ul>
 
 
-      <div class = "base" >
+          </div>
+
+          <div class = "inline-block-child">
+
+            <h3 style = "margin-bottom: 0px">Web Development Teaching Assistant</h3>
+            <h5 class = "noMargin" >Memphis Academy of Science & Engineering</h5>
+            <h6 class = "noMargin" >September 2017 - May 2018</h6>
+            <ul>
+              <li>Assisted in the teaching of basic web design concepts</li>
+              <li>Helped students hands on writing HTML/CSS/JavaScript. </li>
+            </ul>
+
+            <h3 style = "margin-bottom: 0px">Coach for Hackathon 2018</h3>
+            <h5 class = "noMargin" >Fed-Ex Institue of Technology</h5>
+            <h6 class = "noMargin" >July 2018</h6>
+            <ul>
+              <li>Led a team of five students and assisted them in the completion of their app.</li>
+              <li>Tought the team the basics behind app design and how to use AppInventor.</li>
+            </ul>
+
+          </div>
+    </div>
+
+      <div class = "base col-1" >
 
             <img src = "https://image.ibb.co/kSzF7z/HutShop.png">
 
@@ -262,46 +256,46 @@
 
 
 
-    <h1 class="base" style=" margin-left: 47%; margin-right: 30%">Personal Projects</h1>
-    <div class = "projects">
+    <h1 class="titleWhite col-3">Personal Projects</h1>
+    <div class = "projects col-3">
 
       <a href="https://partylinevr.com">
-      <div class = "base hover" >
+      <div class = "base project" >
 
             <h2>Party Line VR</h2>
-            <img src = "https://img1.wsimg.com/isteam/ip/66526596-3bc8-4f41-b1d3-36575e221f39/2c0d10e6-76f7-425f-a285-81e9bf1e7670.png/:/rs=w:600,h:750,cg:true,m/cr=w:1200,h:750,a:cc" class = "project" />
+            <img width="80%" src = "https://img1.wsimg.com/isteam/ip/66526596-3bc8-4f41-b1d3-36575e221f39/2c0d10e6-76f7-425f-a285-81e9bf1e7670.png/:/rs=w:600,h:750,cg:true,m/cr=w:1200,h:750,a:cc" />
 
         <p>Party Line VR is an assymetric vr party game in which you battle your friends using  up to 8 smart-devices</p>
 
       </div>
     </a>
 
-      <div class = "base" >
+      <div class = "base project" >
         <h2>Stick Together</h2>
-          <img src = "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" class = "project" />
+          <img width="80%"src = "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" />
 
         <p>Stick Together! Play as a family man who's been seperated from his family. Move surrounding bumper-stickers to get to the ones you love most.</p>
       </div>
-      <div class = "base" >
+      <div class = "base project " >
         <h2>Planet Pool</h2>
-          <img src = "https://images.immediate.co.uk/volatile/sites/3/2017/11/imagenotavailable1-39de324.png?quality=90&resize=620,413" class = "project" />
+          <img width="80%" src = "https://images.immediate.co.uk/volatile/sites/3/2017/11/imagenotavailable1-39de324.png?quality=90&resize=620,413" />
 
         <p>Planet Pool is a reimagining of the game of billiards. There is no tables, no gravity, and no limits to the fun you will have</p>
       </div>
       <a href="https://itch.io">
-      <div class = "base hover">
+      <div class = "base project">
 
             <h2>Personal Bubble</h2>
-              <img src = "https://img.itch.zone/aW1nLzE0MTU2MDAuZ2lm/original/KP8luQ.gif" class = "project" />
+              <img width="80%" src = "https://img.itch.zone/aW1nLzE0MTU2MDAuZ2lm/original/KP8luQ.gif" />
 
         <p>Submitted as an entry or Ludum Dare 42, Personal Bubble is an attempt at making a 3D version of the popular web game Agar.io</p>
       </div>
       </a>
       <a href="https://itch.io">
-      <div class = "base hover">
+      <div class = "base project">
 
             <h2>Magnet Head</h2>
-              <img src = "https://img.itch.zone/aW1hZ2UvMzAwNzU2LzE0NzE1MDcuZ2lm/250x600/aEpTZC.gif" class = "project" />
+              <img width="80%" src = "https://img.itch.zone/aW1hZ2UvMzAwNzU2LzE0NzE1MDcuZ2lm/250x600/aEpTZC.gif" />
 
         <p>Magnet Head! A Zombie-Shooter without the control of aiming. Your head will be attracted to the closest metal object in the room and shoot in that direction. A submision for the GMTK 2018 Game Jam</p>
       </div>
