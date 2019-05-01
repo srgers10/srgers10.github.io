@@ -1,0 +1,170 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #bccad6;
+}
+.page{
+  overflow: hidden;
+  z-index: 1;
+  margin: auto;
+  width: 60%;
+  padding: 64px;
+  padding-top: 0;
+  background-color: #f1e3dd;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.header{
+  font-size: 64px;
+  margin-bottom: 0px;
+  color: #555;
+}
+.subheader{
+  background-color: #8d9db6;
+  color: white;
+  padding: 8px;
+  font-size: 32px;
+}
+
+.profile_card{
+  padding: 8px;
+  text-align: center;
+  background-color: white;
+  height: 40%;
+}
+.profile_card h1{
+  background-color: #667292;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+.profile_card img{
+  border-radius: 50%;
+  border-color: #8d9db6;
+  border-style: solid;
+  border-width: 8px;
+}
+
+.profile_card h3{
+  float: right;
+  width: 50%;
+  margin: 0;
+  color: #fff;
+  background-color: #8d9db6;
+}
+/* Set a specific color for each brand */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Facebook */
+.fa-facebook {
+
+  background: #3B5998;
+  color: white;
+}
+
+
+.contact{
+
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-color: #667292;
+  color: white;
+}
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #8d9db6;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: Oswald;
+  -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+
+
+}
+
+ul.sidenav li a.active {
+  background-color: #667292;
+  color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 25%;
+
+  padding: 1px 16px;
+  height: 1000px;
+  font-family: Oswald;
+  /*background: url("https://i.pinimg.com/originals/d2/63/55/d26355a4484cf412669476a57a263abc.png");
+  background-size: cover;*/
+}
+
+@media screen and (max-width: 900px) {
+  .page{
+    height: auto;
+    width: 92%;
+    padding: 16px;
+  }
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .contact{
+    visibility: hidden;
+
+  }
+
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
