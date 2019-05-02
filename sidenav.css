@@ -114,13 +114,13 @@ div.content {
 }
 
 @media screen and (max-width: 900px) {
+  .profile_card img{
+    height: 20%;
+  }
   .page{
     height: auto;
     width: 92%;
     padding: 16px;
-  }
-  .profile_card{
-    height: 50%;
   }
   ul.sidenav {
     width: 100%;
