@@ -35,6 +35,7 @@ body, html{
   text-align: center;
   background-color: white;
   height: 40%;
+  margin-bottom: 8px;
 }
 .profile_card h1{
   background-color: #667292;
