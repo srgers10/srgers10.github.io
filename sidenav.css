@@ -89,6 +89,7 @@ body, html{
   left: 0;
   right: 0;
   bottom:0;
+  height: 20%;
   background-color: #667292;
   color: white;
 }
