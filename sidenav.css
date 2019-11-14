@@ -156,6 +156,7 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
   }
   .contact{
     visibility: hidden;
