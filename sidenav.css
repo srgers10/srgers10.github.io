@@ -67,7 +67,7 @@ body, html{
   padding: 8px;
   text-align: center;
   background-color: white;
-  padding-bottom: 64px;
+  padding-bottom: 4px;
 }
 .profile_card h1{
   background-color: #667292;
@@ -97,7 +97,7 @@ body, html{
   left: 0;
   right: 0;
   bottom:0;
-  height: 20%;
+  height: 25%;
   background-color: #667292;
   color: white;
 }
