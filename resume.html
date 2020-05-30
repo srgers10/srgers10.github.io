@@ -12,26 +12,26 @@
         padding-right: 32px;
       }
       .skill-section{
-        
-        padding: 8px;
-        border: #667292 2px solid;
         background-color: #667292;
         color: white;
-        border-radius: 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-evenly;
       }
-      #skills{
+      .skill-holder{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 24px;
-        text-align: center;
+        margin: 12px 0px;
       }
-      .skill-section div{
-        margin: 12px;
-        
+      .skill-holder h3{
+        margin-right: 16px;
+      }
 
-        height: 20px;
-        padding: 8px;
+      .skill-section div{
+        margin: 0px 24px;
         border-radius: 8px;
+        padding: 12px 0px;
+        text-align: center;
       }
       .column {
         float: left;
@@ -112,56 +112,57 @@
           </div>
         <hr>
         <div class = "subheader">Skills</div>
+        <br>
         <div id="skills">
-          <div id="languages">
+          <div class = "skill-holder" id="languages">
             <h3 class="title">Languages</h3>
-            <div class="skill-section" >
-              <div>C# </div> 
-              <div>C/C++</div>
-              <div>JavaScript</div>
-              <div>Python</div>
-              <div>HTML</div>
+            <div class="skill-section" style="background-color: #ef476f;">
+              <div>C# </div> <hr>
+              <div>C/C++</div><hr>
+              <div>JavaScript</div><hr>
+              <div>Python</div><hr>
+              <div>HTML</div><hr>
               <div>CSS</div> 
             </div>
           </div>
 
-          <div id = "tools">
+          <div class = "skill-holder" id = "tools">
             <h3 class="title">Tools</h3>
-            <div class="skill-section">
-              <div>Unity3D</div>
-              <div>Blender</div>
-              <div>Splunk</div>
-              <div>Android Studio</div>
-              <div>Google Cloud Platform</div>
-              <div>Git/GitHub</div>
+            <div class="skill-section" style="background-color: #ffbc42;">
+              <div>Unity3D</div><hr>
+              <div>Blender</div><hr>
+              <div>Splunk</div><hr>
+              <div>Android Studio</div><hr>
+              <div>Git/GitHub</div><hr>
               <div>JIRA</div>
             </div>
           </div>
 
-          <div id="frameworks">
+          <div class = "skill-holder" id="frameworks">
             <h3 class="title">Frameworks</h3>
-            <div class="skill-section" >
-              <div>Oculus SDK</div>
-              <div>SteamVR SDK</div>
-              <div>VRTK</div>
-              <div>AR Foundation</div>
-              <div>P5.js</div>
+            <div class="skill-section" style="background-color: #06d6a0;" >
+              <div>Oculus SDK</div><hr>
+              <div>SteamVR SDK</div><hr>
+              <div>VRTK</div><hr>
+              <div>AR Foundation</div><hr>
+              <div>P5.js</div><hr>
               <div>Node.js</div>
             </div>
           </div>
           
-          <div id = "platforms">
+          <div class = "skill-holder" id = "platforms">
             <h3 class="title">Platforms</h3>
 
-            <div class="skill-section" >
-              <div>Android</div>
-              <div>Web</div>
-              <div>Oculus Quest</div>
-              <div>SteamVR</div>
+            <div class="skill-section" style="background-color: #1985a1;" >
+              <div>Android</div><hr>
+              <div>Web</div><hr>
+              <div>Oculus Quest</div><hr>
+              <div>SteamVR</div><hr>
               <div>WebXR</div>
             </div>
           </div>
         </div>
+        <br>
         <div id="experience">
           <div class = "subheader">Work Experience</div>
           <div class = "job">
