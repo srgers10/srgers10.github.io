@@ -1,22 +1,48 @@
-.mySlides {display: none;}
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
   position: relative;
-  margin: auto;
+  box-sizing: border-box;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
@@ -28,40 +54,33 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #667292;
+  padding: 2px 16px;
+  color: white;
 }
 
-.active {
-  background-color: #717171;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 82px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.active,
+.demo:hover {
+  opacity: 1;
 }

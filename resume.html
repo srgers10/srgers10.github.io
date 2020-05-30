@@ -5,11 +5,42 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="sidenav.css" rel="stylesheet">
     <style>
+      .company-logo{
+        float: left;
+        max-width: 250px;
+        max-height: 140px;
+        padding-right: 32px;
+      }
+      .skill-section{
+        
+        padding: 8px;
+        border: #667292 2px solid;
+        background-color: #667292;
+        color: white;
+        border-radius: 20px;
+      }
+      #skills{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      .skill-section div{
+        margin: 12px;
+        
+
+        height: 20px;
+        padding: 8px;
+        border-radius: 8px;
+      }
       .column {
         float: left;
 
       }
-
+      .date{
+        color: #667292;
+        float: right;
+      }
       .job{
         padding: 16px;
       }
@@ -21,10 +52,6 @@
       .right {
         width: 30%;
       }
-      .job img{
-        width: 50%;
-      }
-
       @media screen and (max-width: 900px) {
         .column{
           float: none;
@@ -43,6 +70,9 @@
         .job img{
           width: 80%;
         }
+        #skills{
+          display: inline;
+        }
       }
 
     </style>
@@ -52,208 +82,220 @@
   <body>
     <ul class="sidenav">
       <div class="profile_card">
-        <img  class="profile_pic"src="ProfilePic.png">
+        <img  class="profile_pic"src="resources/ProfilePic.png">
         <h1>Stephen Rogers</h1>
         <h3>Software Engineer</h3>
         <div style="margin-top: 64px;">
           <a href="https://github.com/srgers10"><img width = "24px"src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" alt=""></a>
           <a href="https://www.linkedin.com/in/stephen-rogers-6b7203152/"><img width = "24px"src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt=""></a>
           <a href="https://twitter.com/_4thWallStudios"><img width = "24px"src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" alt=""></a>
+          <a href="https://srgers10.itch.io/"><img width="24px" src="https://static.itch.io/images/app-icon.svg" alt=""></a>
 
         </div>
       </div>
       <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a class="active" href="resume.html">Resume</a>
+      </li>
       <li><a href="projects.html">Projects</a></li>
       <div class="contact">
-        <h3 class="title">Contact</h3>
-
-        <p>Personal Email: stephen.rogers6@gmail.com</p>
-        <p>School Email: srgers10@memphis.edu</p>
+        <p>Email: stephen.rogers6@gmail.com</p>
         <p>Phone: 901-383-3007</p>
       </div>
     </ul>
     <div class="content">
       <div class="page">
         <div class = "header">Resume <span style="font-size: 24px;"><a href="StephenRogersResume.pdf">(PDF)</a></span></div>
+        <div style="display: flex; justify-content: space-evenly ">
+          <a href="#skills" style="color: #333; font-size: 20px;">Skills</a>
+          <a href="#experience" style="color: #333; font-size: 20px;">Work Experience</a>  
+          <a href="#education" style="color: #333; font-size: 20px;">Education</a>
+          </div>
         <hr>
-        <div class = "column left">
+        <div class = "subheader">Skills</div>
+        <div id="skills">
+          <div id="languages">
+            <h3 class="title">Languages</h3>
+            <div class="skill-section" >
+              <div>C# </div> 
+              <div>C/C++</div>
+              <div>JavaScript</div>
+              <div>Python</div>
+              <div>HTML</div>
+              <div>CSS</div> 
+            </div>
+          </div>
+
+          <div id = "tools">
+            <h3 class="title">Tools</h3>
+            <div class="skill-section">
+              <div>Unity3D</div>
+              <div>Blender</div>
+              <div>Splunk</div>
+              <div>Android Studio</div>
+              <div>Google Cloud Platform</div>
+              <div>Git/GitHub</div>
+              <div>JIRA</div>
+            </div>
+          </div>
+
+          <div id="frameworks">
+            <h3 class="title">Frameworks</h3>
+            <div class="skill-section" >
+              <div>Oculus SDK</div>
+              <div>SteamVR SDK</div>
+              <div>VRTK</div>
+              <div>AR Foundation</div>
+              <div>P5.js</div>
+              <div>Node.js</div>
+            </div>
+          </div>
+          
+          <div id = "platforms">
+            <h3 class="title">Platforms</h3>
+
+            <div class="skill-section" >
+              <div>Android</div>
+              <div>Web</div>
+              <div>Oculus Quest</div>
+              <div>SteamVR</div>
+              <div>WebXR</div>
+            </div>
+          </div>
+        </div>
+        <div id="experience">
           <div class = "subheader">Work Experience</div>
           <div class = "job">
-
-            <h2>UMRF Ventures, Inc</h2>
-            <h3 style = "margin-top: 0px">June 2019 - Present</h3>
-            <img src = "umrflogo.png" style="float: left;" />
+            <h3 class="date">November 2018 - Present</h3>
+            <h2>4th Wall Breakers, LLC</h2>
+            <div style="clear:both;"></div>
+            <img src = "resources/4thWallLogo.png" class="company-logo"/>
+            <p>4th Wall Breakers LLC is a self-owned video game studio which primarily focuses on developing VR titles. 
+              It's current release, PartyLine VR, has been listed in the "Top Selling" section for VR games on Steam.
+            </p>
+            <div style="clear:both;"></div>
+            <ul>
+              <li>
+                <h3><u>CEO & Founder </u></h3>
+                <ul>
+                  <li>Designed, developed, and documented multiple full scale Augmented & Virtual Reality experiences.</li>
+                  <li>Worked on rapid prototyping for emerging technologies (ex: VR, Hand-tracking, Computer Vision, Machine Learning)</li>
+                  <li>Worked as a consultant/contractor for multiple clients on various VR games/prototypes</li>   
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <div class = "job">
+            <h3 class="date">June 2019 - Present</h3>
+            <h2>UMRF Ventures, Inc</h2>   
+            <div style="clear:both;"></div>
+            <img src = "resources/umrflogo.png" class="company-logo" />
             <p>UMRF Ventures is a wholly-owned subsidiary of the University of Memphis Research Foundation.
                 UMRF Ventures facilitates unique collaborations with corporations, agencies, and organizations that help to grow Memphis.
-
             </p>
+            <div style="clear:both;"></div>
+            
+            <ul>
+              <li>
+                <h5 class="date">December 2019 - Present</h5>
+                <h3><u>Lead Systems Analyst</u></h3>
+                <ul>
+                  <li>Created parsers for FedEx server data to be ingested into GCP</li>
+                  <li>Developed iOS & Android app for FedEx’s QDM service</li>
+                  <li>Created scripts for monitoring DNS data among FedEx servers.</li>
+                  <li>Design and rebrand companies website</li>
+                  <li>Lead team members through day to day tasks</li>
+                </ul>
+              </li>
+              <li>
+                <h5 class="date">June 2019 - December 2019</h5>
+                <h3><u>Systems Analyst</u></h3>
+                <ul>
+                  <li>Worked with small cross functional teams to analyze and monitor big data using Splunk</li>
+                  <li>Researched multiple information security related threats and anomalies</li>
+                  <li>Developed and document various visualizations and dashboards</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          
+          <div class = "job">
+            <h3 class="date">September 2017 - July 2019</h3>
+            <h2>Code Crew</h2>   
+            <div style="clear:both;"></div>
+            <img src = "resources/CodeCrew_Logo.png" class="company-logo" />
+            <p>CodeCrew is a leading nonprofit for technology and computer science education for youth across Memphis.</p>
+            <div style="clear:both;"></div>
+            <ul>
+              <li>
+                <h5 class="date">January 2018 - July 2019</h5>
+                <h3><u>Computer Science Instructor</u></h3>
+                <ul>
+                  <li>Instructed 9th and 10th grade students in basics of JavaScript and app design with MIT AppInventor</li>
+                  <li>Developed and maintained curriculum for CodeCrew classes</li>
+                  <li>Instructed college students in building native Android apps, including writing XML and Java code</li>
+                  <li>Led highschool students through a video game design course using Unity Game Engine.</li>
+                  <li>Created and maintained GitHub accounts for students</li>
+                </ul>
+              </li>
+              <li>
+                <h5 class="date">September 2017 - January 2018</h5>
+                <h3><u>Computer Science Teaching Assistant</u></h3>
+                <ul>
+                  <li>Assisted in the classroom with classroom management</li>
+                  <li>Maintained records of student activity</li>
+                  <li>Spent 1-on-1 time with students and worked out programming problems</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <div class = "job">
+            <h3 class="date">February 2017 - March 2018</h3>
+            <h2>Hutshops, LLC</h2>   
+            <div style="clear:both;"></div>
+            <img src = "resources/HutShop.PNG" class="company-logo" />
+            <p>Hutshops is an e-commerce re-distribution center that sells shelf-steady items. Hutshops is a top-leading
+            seller on Amazon.com including having 50+ top-selling items in specified categories </p>
             
             <div style="clear:both;"></div>
             <ul>
               <li>
+              <h3><u>Administrative Assistant</u></h3>
+                  <ul>
+                    <li>Developed an inhouse timekeeping web-app using HTML/CSS/JS & Google Firebase. </li>
+                    <li>Consolidated and reconciled invoices and transactions.</li>
+                    <li>Created and oversaw shipment orders based on high-demand items</li>
+                    <li>Oversaw and managed products that were returned and damaged. </li>
 
-                <h3 style = "margin-bottom: 0px"><u>Shift Lead</u><span style = "font-size: 16px;">(December 2019 - Present)<span></h3>
-                <ul>
-                  <li>Lead team members through day to day tasks</li>
-                  <li>Created parsers for FedEx server data to be ingested into GCP</li>
-                  <li>Developed iOS & Android app for FedEx’s QDM service</li>
-                  <li>Worked with an information security team to analyze and monitor big data using Splunk</li>
-                  <li>Created scripts for monitoring DNS data among FedEx servers.</li>
-                </ul>
-
+                  </ul>
               </li>
+          </div>
+
+        </div>
+        
+        <div id="education">
+          <div class= "subheader">Education</div>
+          <h3 class="date">August 2015  - May 2020</h3>
+          <h2>University of Memphis</h2>
+          <div style="display: flex; justify-content: space-between;">
+            <div>
+              <h4>Bachelors of Arts & Sciences</h4>
+              <p>Computer Science Major</p>
+              <p>Deans Schloar</p>
+            </div>
+            <div>
+              <h4>Orgnanizations</h4>
+              <p>Collegiate Entrepreneurs Organization</p>
+              <p>Memphis Game Developers</p>
+            </div>
+          </div>         
+        </div>
         
 
-            </ul>
-
+        
       </div>
-      <hr>
-          <div class = "job">
-
-                <h2>Fourth Wall Breakers, LLC</h2>
-                <h3 style = "margin-top: 0px">November 2018 - Present</h3>
-                <img src = "4thWallLogo.png" style="float: left;"/>
-                <p>4th Wall Breakers LLC is a self-owned video game studio which primarily focuses on developing VR titles. It's current release, PartyLine VR, has been listed in the "Top Selling" section for VR games on Steam.
-
-                </p>
-                <div style="clear:both;"></div>
-                <ul>
-                  <li>
-
-                    <h3 style = "margin-bottom: 0px"><u>CEO & Founder </u><span style = "font-size: 16px;">(November 2018 - Present)<span></h3>
-                    <ul>
-                      <li>Designed and drove the vision and implementation of features and game systems.</li>
-                      <li>Modeled 3D assets for the game, including player avatar and props.</li>
-                      <li>Created an indepth networking system for connecting smartdevices via a browser to the game.</li>
-                      <li>Programmed the interaction systems and game logic </li>
-                    </ul>
-                  </li>
-
-                </ul>
-
-          </div>
-          <hr>
-          
-          <div class = "job">
-
-                <h2>CodeCrew</h2>
-                <h3 style = "margin-top: 0px">September 2017 - July 2019</h3>
-                <img src = "CodeCrew_Logo.png" style="float: left;"/>
-                <p>CodeCrew is a leading nonprofit for technology and computer science education for youth across Memphis.</p>
-                
-                <div style="clear:both;"></div>
-                <ul>
-                  <li>
-
-                    <h3 style = "margin-bottom: 0px"><u>Computer Science Instructor</u><span style = "font-size: 16px;">(January 2018 - Present)<span></h3>
-                    <ul>
-                      <li>Instructed 9th and 10th grade students in basics of JavaScript and app design with MIT AppInventor</li>
-                      <li>Developed and maintained curriculum for CodeCrew classes</li>
-                      <li>Instructed college students in building native Android apps, including writing XML and Java code</li>
-                      <li>Led highschool students through a video game design course using Unity Game Engine.</li>
-                      <li>Created and maintained GitHub accounts for students</li>
-                    </ul>
-                  </li>
-                  <li>
-
-                    <h3 style = "margin-bottom: 0px"><u>Computer Science Teaching Assistant</u><span style = "font-size: 16px;">(September 2017 - January 2018)<span></h3>
-                    <ul>
-                      <li>Assisted in the classroom with classroom management</li>
-                      <li>Maintained records of student activity</li>
-                      <li>Spent 1-on-1 time with students and worked out programming problems</li>
-                    </ul>
-                  </li>
-
-                </ul>
-
-          </div>
-          <hr>
-          <div class = "job">
-
-                <h2>Hutshops, LLC</h2>
-                <h3 style = "margin-top: 0px">February 2017 - March 2018</h3>
-                <img src = "HutShop.PNG" style="float: left;"/>
-                <p>Hutshops is an e-commerce re-distribution center that sells shelf-steady items. Hutshops is a top-leading
-                seller on Amazon.com including having 50+ top-selling items in specified categories </p>
-                
-                <div style="clear:both;"></div>
-                <ul>
-                  <li>
-                  <h3 style = "margin-bottom: 0px"><u>Administrative Assistant</u><span style = "font-size: 16px;">(February 2017 - March 2018)<span></h3>
-                      <ul>
-                        <li>Developed an inhouse timekeeping web-app using HTML/CSS/JS & Google Firebase. </li>
-                        <li>Consolidated and reconciled invoices and transactions.</li>
-                        <li>Created and oversaw shipment orders based on high-demand items</li>
-                        <li>Oversaw and managed products that were returned and damaged. </li>
-
-                      </ul>
-                  </li>
-          </div>
-          <hr>
-          <div class = "job">
-                <h2>Beakers</h2>
-                <h3 style = "margin-top: 0px">June 2015 - February 2017</h3>
-                <img src = "BeakersLogo.jpg" style="float: left;"/>
-                <p>Beaker's is a child company of HutShops that sells an assortment of desert items including shaved-ice,
-                  baked-goods, candy, and various novelty gifts. </p>
-                  
-                  <div style="clear:both;"></div>
-                <ul>
-                  <li>
-                    <h3 style = "margin-bottom: 0px"><u>Assistant Manager</u><span style = "font-size: 16px;">(June 2016 - February 2017)<span></h3>
-                      <ul>
-                        <li>Trained employees, monitored inventory, and ordered merchandise based on demand.</li>
-                        <li>Developed a company website and an animated menu display using p5.js (a JavaScript library)</li>
-                      </ul>
-                  </li>
-                  <li>
-                    <h3 style = "margin-bottom: 0px"><u>Store Clerk</u><span style = "font-size: 16px;">(June 2015 - June 2016)<span></h3>
-                      <ul>
-                        <li>Restocked items and took inventory</li>
-                        <li>Assisted customers and managed cash register</li>
-                        <li>Took phone orders and created displays.</li>
-                      </ul>
-                  </li>
-                </ul>
-
-          </div>
-
-        </div>
-        <div class = "column right" id="skills">
-          <div class = "subheader">Skills</div>
-          <h3 class="title">Languages</h3>
-          <p>C# &bull; C/C++ &bull; Java &bull; JavaScript &bull; Python &bull; Ruby
-            &bull; Powershell &bull; Processing &bull; Swift &bull; HTML/CSS
-          </p>
-          <h3>Databases</h3>
-          <p>MySQL &bull; MongoDB &bull; Neo4j &bull; Splunk &bull; Firebase</p>
-          
-          <h3>Libraries</h3>
-          <p>P5 &bull; Node &bull; React</p>
-          
-          <h3>Tools</h3>
-          <p>Git/GitHub &bull; Google Cloud Platform &bull; Xcode &bull; Android Studio &bull; Blender &bull; Unity Engine</p>
-
-          <h3>Misc</h3>
-          <p>VR Game Development &bull; Conversational in Spanish</p>
-
-          <br>
-          <div class= "subheader">Education</div>
-
-              <h3>First Assembly Christian School - Cordova, TN</h3>
-                  <h6>August 2010 - May 2015</h6>
-                  <p>Graduated with a 4.15 GPA, with honors. Was awarded the Principal's Leadership Award. </p>
-              </li>
-              <h3>University of Memphis - Memphis,TN </h3>
-                  <h6>August 2015  - May 2020</h6>
-                  <p>Graduated with a Bachelors of Science in Computer Science
-                  </p>
-              </li>
-            </ul>
-        </div>
-      </div>
-
 
     </div>
 

@@ -14,13 +14,14 @@
 
     <ul class="sidenav">
       <div class="profile_card">
-        <img  class="profile_pic"src="ProfilePic.png" >
+        <img  class="profile_pic"src="resources/ProfilePic.png" >
         <h1>Stephen Rogers</h1>
         <h3>Software Engineer</h3>
         <div style="margin-top: 64px;">
           <a href="https://github.com/srgers10"><img width = "24px"src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" alt=""></a>
           <a href="https://www.linkedin.com/in/stephen-rogers-6b7203152/"><img width = "24px"src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt=""></a>
           <a href="https://twitter.com/_4thWallStudios"><img width = "24px"src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" alt=""></a>
+          <a href="https://srgers10.itch.io/"><img width="24px" src="https://static.itch.io/images/app-icon.svg" alt=""></a>
 
         </div>
       </div>
@@ -28,134 +29,121 @@
       <li><a href="resume.html">Resume</a></li>
       <li><a href="projects.html">Projects</a></li>
       <div class="contact">
-        <h3 class="title">Contact</h3>
-
-        <p>Personal Email: stephen.rogers6@gmail.com</p>
-        <p>School Email: srgers10@memphis.edu</p>
+        <p>Email: stephen.rogers6@gmail.com</p>
         <p>Phone: 901-383-3007</p>
       </div>
     </ul>
 
     <div class="content">
       <div class="page">
-        <h1 class="header"><span class="header-big">Hello,</span> a bit about me:</h1>
-        <p style=" font-size: 18px;"> I am a software engineer passionate about games and VR. I have worked in the games industry for 2 years and am the founder and CEO of 4th Wall Breakers LLC.
-          Here you can find some of the projects I've had the opportunity of working on and some of the personal-fun-things I've made as well. I have a strong perseverance for learning new things and taking
+        <h1 class="header"><span class="header-big">Hello,</span> a bit about me</h1>
+        <p style=" font-size: 18px;"> As a VR enthusiast, I love tinkering with new ideas and building upon them. Here you can find some of the projects I've had the opportunity of working on and some of the personal-fun-things I've made as well. I have a strong perseverance for learning new things and taking
           on challenges, and I always like to put some extra time in polishing my creations to make sure the creative vision is achieved in the best possible way.
         </p>
         <div style="margin: 0 auto; text-align: center; width: 30%;">
-          <a class="button" style="margin: 0 auto; text-align: center; border-color: #667292; background: #8d9db6; color: white" href="projects.html">Resume</a>
+          <a class="button" style="margin: 0 auto; text-align: center; border-color: #667292; background: #8d9db6; color: white" href="resume.html">Resume</a>
           <a class="button" style="margin: 0 auto; text-align: center; border-color: #667292; background: #8d9db6; color: white" href="projects.html">Projects</a>
         </div>
         <br>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://img1.wsimg.com/isteam/ip/66526596-3bc8-4f41-b1d3-36575e221f39/2c0d10e6-76f7-425f-a285-81e9bf1e7670.png/:/rs=w:600,h:750,cg:true,m/cr=w:1200,h:750,a:cc" style="width:100%">
-            <div class="text">Partyline VR</div>
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+              <img src="resources/ScreenshotMain.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="resources/HandUIThumbnail.PNG" style="width:100%">
           </div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" style="width:100%">
-            <div class="text">Stick Together</div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="resources/Screenshot1.png" style="width:100%">
           </div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://img.itch.zone/aW1hZ2UvMzYyMzkzLzE4MTEwNzUucG5n/250x600/iomMVW.png" style="width:100%">
-            <div class="text">A House For Louse</div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="resources/SharedSpaceScreenshot2.png" style="width:100%">
           </div>
 
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="resources/CulturingScreenshot.png" style="width:100%">
           </div>
-          <br>
 
-          <div style="text-align:center" onclick="showSlides()">
-            <span class="dot" onclick="showSlides()"></span>
-            <span class="dot" onclick="showSlides()"></span>
-            <span class="dot" onclick="showSlides()"></span>
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://pbs.twimg.com/profile_banners/824663830743674880/1581922678/1080x360" style="width:100%">
           </div>
-        <hr>
-        <div>
-          <div class="subheader">PartyLine VR  <span class="subheader-description">- VR Local Multiplayer Party Game
 
-          </span>
-            <div style="font-size: 16px; padding: 0;">- Sole Developer</div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
           </div>
-          <div>
-            <img style="width:50%; float:left; padding: 8px;" src="PartyLineLogo.png">
 
-            <p >Partyline VR is a collection of virtual reality experiences where up to 8 people can use their smart-phones or tablets and join in the fun. No app download required!
-              Just go to partylinevr.com and it will connect you automatically!
-              Players can interact, battle, or help the person in VR in a combination of (currently) 4 exciting games!
-            </p>
-            <div style="margin: 0 auto; text-align: center; width: 30%;">
-              <a class="button" href="https://store.steampowered.com/app/846830/PartyLine_VR/">Steam</a>
-              <a class="button" href="https://partylinevr.com">Website</a>
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="resources/ScreenshotMain.jpg" style="width:100%" onclick="currentSlide(1)" alt="PartyLine VR: Assymetric VR Party Game w/ smartphones">
             </div>
-            <br>
-          </div>
-          <iframe style="display: block; margin: 0 auto;" width="85%" height="300px" src="https://www.youtube.com/embed/wLU-8VBtYpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <div class="image-grid">
-            <img src = "https://steamcdn-a.akamaihd.net/steam/apps/846830/ss_6e08a693df359dca1bb4bc82cf70fa3d0ad9b9d7.600x338.jpg?t=1568996060">
-            <img src= "https://steamcdn-a.akamaihd.net/steam/apps/846830/ss_583d0bca4cc99f8526e27731cda3ef644d93b916.600x338.jpg?t=1568996060">
-            <img src = "https://steamcdn-a.akamaihd.net/steam/apps/846830/ss_3f9bc0e5d59b74e8868d14c5f1e94fd10aa7e384.600x338.jpg?t=1568996060">
-            <img src= "https://steamcdn-a.akamaihd.net/steam/apps/846830/ss_ca009ff04c486e7d90016c3e65078d68fba5f990.600x338.jpg?t=1568996060">
-          </div>
-        </div>
-        <hr>
-        <div>
-          <div class="subheader">Shared Space <span class="subheader-description">- Web App for Multi-User 3D object interaction</span>
-            <div style="font-size: 16px; padding: 0;">- Lead Developer</div>
-          </div>
-          <div>
-              <img style="width:50%; float:left;" src="SharedSpaceLogo.png">
-            <p >Shared Space is a web based platform that enables people with common interest to interact with 3D models in a collaborative virtual environment.
-               Shared Space contains a robust multi-clients networking system that gives users the ability to create a lobby, upload 3D objects, and communicate over voice and text all in realtime.
-            </p>
-            <div style="margin: 0 auto; text-align: center; width: 30%;">
-              <a class="button" href="https://sharedspace-capstone.herokuapp.com/">Website</a>
+            <div class="column">
+              <img class="demo cursor" src="resources/HandUIThumbnail.PNG" style="width:100%" onclick="currentSlide(2)" alt="Hand-Tracking UI/Menu (Prototype)">
             </div>
-            <br>
-            <img style="width: 85%; padding: 8px; margin: 0 auto;" src="SharedSpaceScreenshot2.png">
-
+            <div class="column">
+              <img class="demo cursor" src="resources/Screenshot1.png" style="width:100%" onclick="currentSlide(3)" alt="Finger Concerto: VR Hand-Tracking based Musical Instrument">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="resources/SharedSpaceScreenshot2.png" style="width:100%" onclick="currentSlide(4)" alt="Shared Space: Real-time collabarative work space">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="resources/CulturingScreenshot.png" style="width:100%" onclick="currentSlide(5)" alt="Culturing: Social Media for recomending media">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://pbs.twimg.com/profile_banners/824663830743674880/1581922678/1080x360" style="width:100%" onclick="currentSlide(6)" alt="Project Pop-Up: Puzzle/Plaftormer inspired by PopUp Books">
+            </div>
           </div>
-
         </div>
-        <hr>
-        <br>
-        <div style="margin: 0 auto; text-align: center; width: 30%;">
-          <a class="button" style="margin: 0 auto; text-align: center; border-color: #667292; background: #8d9db6; color: white" href="projects.html">More</a>
-        </div>
-
-      </div>
-
-
-      <!-- Container for the image gallery -->
+          
 
     </div>
 
   </body>
   <script>
-  var slideIndex = 0;
-  showSlides();
+  var slideIndex = 1;
+showSlides(slideIndex);
 
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000); // Change image every 2 seconds
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
   </script>
 </html>

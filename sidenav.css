@@ -75,7 +75,7 @@ body, html{
   font-size: 2em;
   margin-bottom: 0;
 }
-.profile_card img{
+.profile_pic{
   border-radius: 50%;
   border-color: #8d9db6;
   border-style: solid;
@@ -90,16 +90,23 @@ body, html{
   background-color: #8d9db6;
 }
 
+.social a{
+  background-color: none;
+  border-width: 8px;
+}
 .contact{
 
-  text-align: center;
+  text-align: left;
   position: absolute;
   left: 0;
   right: 0;
   bottom:0;
-  height: 25%;
+  height: 15%;
   background-color: #667292;
   color: white;
+}
+.contact p {
+  margin-left: 16px;
 }
 ul.sidenav {
   list-style-type: none;

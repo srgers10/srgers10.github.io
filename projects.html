@@ -64,13 +64,14 @@
   <body>
     <ul class="sidenav">
       <div class="profile_card">
-        <img  class="profile_pic" src="ProfilePic.png" >
+        <img  class="profile_pic" src="resources/ProfilePic.png" >
         <h1>Stephen Rogers</h1>
         <h3>Software Engineer</h3>
-        <div style="margin-top: 64px;">
+        <div class="social" style="margin-top: 64px;">
           <a href="https://github.com/srgers10"><img width = "24px"src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" alt=""></a>
           <a href="https://www.linkedin.com/in/stephen-rogers-6b7203152/"><img width = "24px"src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt=""></a>
           <a href="https://twitter.com/_4thWallStudios"><img width = "24px"src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" alt=""></a>
+          <a href="https://srgers10.itch.io/"><img width="24px" src="https://static.itch.io/images/app-icon.svg" alt=""></a>
 
         </div>
       </div>
@@ -78,10 +79,7 @@
       <li><a href="resume.html">Resume</a></li>
       <li><a class="active" href="projects.html">Projects</a></li>
       <div class="contact">
-        <h3 class="title">Contact</h3>
-
-        <p>Personal Email: stephen.rogers6@gmail.com</p>
-        <p>School Email: srgers10@memphis.edu</p>
+        <p>Email: stephen.rogers6@gmail.com</p>
         <p>Phone: 901-383-3007</p>
       </div>
     </ul>
@@ -100,7 +98,7 @@
           <div id="vr">
             <div class = "project" >
               <div class="description">
-                <img class="project-img" align="right" src="HandUIScreenshot.PNG"/>
+                <img class="project-img" align="right" src="resources/HandUIScreenshot.PNG"/>
                 <h2>(Prototype) Hand-Tracking Phone/Menu UI</h2>
                 <h4>Skills Used: <span style="color: #ccc;">VR, Hand-Tracking, Gesture Recognition, UI/UX</span> </h4>
                 <p>An expiremental prototype for a in game menu/phone ment for VR hand-tracking experience. Inspired by the Amazon Prime TV show "Upload"</p>
@@ -110,8 +108,8 @@
                 <h3>Videos</h3>
                 <div class="screenshot">
                   <label>Example Interaction</label>
-                  <video controls autoplay poster="HandUIThumbnail.PNG">
-                    <source src="HandTrackingPhoneUIDemo.mp4" type="video/mp4">
+                  <video controls autoplay poster="resources/HandUIThumbnail.PNG">
+                    <source src="resources/HandTrackingPhoneUIDemo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
                 </div>              
@@ -119,7 +117,7 @@
             </div>
             <div class = "project" >
               <div class="description">
-                <img class="project-img" align="right" src="Thumbnail2.png"/>
+                <img class="project-img" align="right" src="resources/Thumbnail2.png"/>
                 <h2>Finger Concerto</h2>
                 <h4>Skills Used: <span style="color: #ccc;">VR, Hand-Tracking, Procedural Music, MIDI, Android (Oculus Quest), Blender</span> </h4>
                 <p>Finger Concerto allows you to have your own orchestra in the palm (and digits) of your hand! Use the Quest's Hand Tracking to play your favorite songs and tunes. Each finger performer can be changed individually to match your musical taste. With +120 Instruments to choose from, here are millions of possibilities!</p>
@@ -134,11 +132,11 @@
                 <div style="display: grid; grid-template-columns: 50% 50%;">
                   <div class="screenshot" style = "width: 90%">
                     <label>Instrument Changer Model</label>
-                    <img src="Screenshot2.png" alt="">
+                    <img src="resources/Screenshot2.png" alt="">
                   </div>
                   <div class="screenshot" style = "width: 90%">
                     <label>Hand Model</label>
-                    <img src="Screenshot1.png" alt="">
+                    <img src="resources/Screenshot1.png" alt="">
                   </div>
                 </div>
                 <h3>Videos</h3>
@@ -149,7 +147,7 @@
               </div>
             </div>
             <div class = "project" >
-              <img class="project-img" align = "right" src = "SteamGameBanner.png" />
+              <img class="project-img" align = "right" src = "resources/SteamGameBanner.png" />
               <h2>PartyLine VR</h2>
               <h4>Skills Used: <span style="color: #ccc;">VR, Asymmetric Local Multiplayer, Twitch API Integration, Web Hosted Networking, Blender</span></h4>
               <p> Partyline VR is a collection of virtual reality experiences where up to 8 people can use their smart-phones/tablets/computers and join in the fun. No app download required!</p>
@@ -162,23 +160,23 @@
                 <div style="display: grid; grid-template-columns: 50% 50%;">
                   <div class="screenshot" style="width: 90%;">
                     <label>Main Hub</label>
-                    <img src="ScreenshotMain.jpg" alt="">
+                    <img src="resources/ScreenshotMain.jpg" alt="">
                   </div>
                   <div class="screenshot" style="width: 90%;">
                     <label>Mission Control</label>
-                    <img src="ScreenshotMC.jpg" alt="">
+                    <img src="resources/ScreenshotMC.jpg" alt="">
                   </div>
                   <div class="screenshot" style="width: 90%;">
                     <label>Guessing Gallery</label>
-                    <img src="ScreenshotGG1.jpg" alt="">
+                    <img src="resources/ScreenshotGG1.jpg" alt="">
                   </div>
                   <div class="screenshot" style="width: 90%;">
                     <label>Perspective Detective</label>
-                    <img src="ScreenshotPD.jpg" alt="">
+                    <img src="resources/ScreenshotPD.jpg" alt="">
                   </div>
                   <div class="screenshot" style="width: 90%;">
                     <label>Shooting Showdown</label>
-                    <img src="ScreenshotSS2.jpg" alt="">
+                    <img src="resources/ScreenshotSS2.jpg" alt="">
                   </div>
                   
                 </div>
@@ -223,33 +221,36 @@
                 <div class="screenshot">
                   <label>Example Interaction</label>
                   <video controls autoplay>
-                    <source src="projectPopUp.mp4" type="video/mp4">
+                    <source src="resources/projectPopUp.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
                 </div>
                 <div class="screenshot">
                   <label>Older Version</label>
                   <video controls autoplay>
-                    <source src="popUp_old.mp4" type="video/mp4">
+                    <source src="resources/popUp_old.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
                 </div>
                 <div class="screenshot">
                   <label>Pop-Up Editor Tool</label>
                   <video controls autoplay>
-                    <source src="popUpEditor.mp4" type="video/mp4">
+                    <source src="resources/popUpEditor.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
                 </div>    
               </div>
             </div>
-
-              <div class = "project" >
-                  <img class="project-img" align = "right"src = "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" />
-                  <h2>Stick Together<span style="font-size: 12px;">(WIP)</span></h2>
-                  <h4>Skills Used: <span style="color: #ccc;">In-Game Level Editor, Puzzle Design, 2D</span></h4>
-                  <p>Stick Together! Play as a family man who's been separated from his family. Move surrounding bumper-stickers to get to the ones you love most.</p>
-              </div>
+            <div class = "project" >
+              <img class="project-img" align = "right"src = "https://img.itch.zone/aW1hZ2UvMzAyODA3LzE0ODI4OTMuZ2lm/250x600/5jRJMC.gif" />
+              <h2>Stick Together<span style="font-size: 12px;">(WIP)</span></h2>
+              <h4>Skills Used: <span style="color: #ccc;">In-Game Level Editor, Puzzle Design, 2D</span></h4>
+              <p>Stick Together! Play as a family man who's been separated from his family. Move surrounding bumper-stickers to get to the ones you love most.</p>
+            </div>
+          </div>
+          <div class="subheader" style="text-align: center;  color: #333;">Game Jams</div>
+            <div id="jams">
+              
               <div class = "project">
                 <img class="project-img" align = "left" src = "https://img.itch.zone/aW1hZ2UvMzYyMzkzLzE4MTEwNzUucG5n/250x600/iomMVW.png" />
                 <h2>A House for Louse</h2>
@@ -271,10 +272,8 @@
                 <p>Magnet Head! A Zombie-Shooter without the control of aiming. Your head will be attracted to the closest metal object in the room and shoot in that direction. A submision for the GMTK 2018 Game Jam</p>
                 <a href="https://srgers10.itch.io/magnet-head">Itch.io page</a>
               </div>
-
-
             </div>
-            </div>
+          </div>
         </div>
       </div>
   </body>
